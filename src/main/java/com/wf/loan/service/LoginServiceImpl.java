@@ -1,7 +1,7 @@
 package com.wf.loan.service;
 
 import com.wf.loan.dao.LoginDAO;
-import com.wf.loan.model.EmployeeDetails;
+import com.wf.loan.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
@@ -15,8 +15,8 @@ public class LoginServiceImpl implements LoginService{
     LoginDAO dao;
 
     @Override
-    public Optional<EmployeeDetails> validateLogin(String employee_id, String employee_password) {
-        List<EmployeeDetails> user=dao.findEmployeeByIdAndPassword(employee_id,employee_password);
+    public Optional<Employee> validateLogin(String employee_id, String employee_password) {
+        List<Employee> user=dao.findEmployeeByIdAndPassword(employee_id,employee_password);
         if(!user.isEmpty()) return Optional.of(user.get(0));
         return Optional.empty();
 //        return true;

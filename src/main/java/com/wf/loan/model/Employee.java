@@ -7,20 +7,20 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="employee_login_details")
-public class EmployeeDetails {
+public class Employee {
 
 
     @Id
-    int id;
+    private int id;
     @Column
-    String employee_id;
+    private String employee_id;
     @Column
-    String employee_password;
-    public EmployeeDetails() {
+    private String employee_password;
+    public Employee() {
 
     }
 
-    public EmployeeDetails(int id, String employee_id, String employee_password) {
+    public Employee(int id, String employee_id, String employee_password) {
         this.id = id;
         this.employee_id = employee_id;
         this.employee_password = employee_password;

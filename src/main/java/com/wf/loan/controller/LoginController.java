@@ -1,17 +1,15 @@
 package com.wf.loan.controller;
 
-import com.wf.loan.model.EmployeeDetails;
 import com.wf.loan.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
-import java.util.Optional;
 
-
+@CrossOrigin("*")
 @RestController
 public class LoginController {
     @Autowired
