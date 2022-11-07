@@ -1,3 +1,9 @@
 :root{
-    --color-primary: rgb(47, 0, 188);
+    --color-primary: #1a2980;
+    --color-secondary: #26d0ce;
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }
