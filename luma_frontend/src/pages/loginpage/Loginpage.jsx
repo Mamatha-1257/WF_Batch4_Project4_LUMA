@@ -11,10 +11,11 @@ export const Loginpage = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
-    setErrorMessage(false);
+    setErrorMessage("");
     event.preventDefault();
     if (!username || !password) {
       setErrorMessage("Please enter valid details");
+      return;
     }
     axios
       .post("http://localhost:8080/login", {
@@ -33,6 +34,7 @@ export const Loginpage = () => {
   return (
     <div className="login-page">
       <div className="form">
+        <h1>Login</h1>
         <form className="login-form" onSubmit={handleSubmit}>
           <input
             type="text"
