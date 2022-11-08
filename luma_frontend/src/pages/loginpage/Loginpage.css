@@ -4,6 +4,10 @@
   width: 360px;
   padding: 8% 0 0;
   margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .form {
@@ -31,7 +35,7 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4c63af;
+  background: var(--color-primary);
   width: 100%;
   border: 0;
   padding: 15px;
@@ -42,7 +46,7 @@
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #4713d5;
+  background: var(--color-tertiary);
 }
 
 .error{

@@ -1,7 +1,9 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
 import "./Loginpage.css";
+import { AuthContext } from "../../context/AuthContext";
 
 export const Loginpage = () => {
   const [username, setUsername] = useState("");
@@ -10,9 +12,11 @@ export const Loginpage = () => {
 
   const navigate = useNavigate();
 
+  const { login } = useContext(AuthContext);
+
   const handleSubmit = (event) => {
-    setErrorMessage("");
     event.preventDefault();
+    setErrorMessage("");
     if (!username || !password) {
       setErrorMessage("Please enter valid details");
       return;
@@ -24,6 +28,7 @@ export const Loginpage = () => {
       })
       .then((response) => {
         if (response.data) {
+          login(username);
           navigate("/dashboard");
         } else {
           setErrorMessage("Incorrect credentials");

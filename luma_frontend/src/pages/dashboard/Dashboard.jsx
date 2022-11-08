@@ -8,8 +8,7 @@ export const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <h1>Loan Management Application</h1>
-      <h2>User Dashboard</h2>
+      <h1>User Dashboard</h1>
       <div className="CTA">
         <Button text="View Loans" onClick={() => navigate("/loans")}></Button>
         <Button
