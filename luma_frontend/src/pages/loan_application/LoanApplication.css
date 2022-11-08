@@ -1,0 +1,32 @@
+.loan-form input, select {
+    height: 2rem;
+    width: 12rem;
+    display: inline-block;
+}
+
+.loan-form label{
+    display: inline-block;
+    padding: 10px 1rem;
+    font-size: 1.2rem;
+    min-width: 9rem;
+}
+
+.form-control{
+    display: flex;
+    margin: 10px;
+}
+
+.loan-form .btn-primary{
+    width: 80%;
+}
+.loan-CTA{
+    display: flex;
+    justify-content: center;
+}
+.loan-CTA .btn-primary{
+    margin: 2px;
+}
+
+.highlight input{
+    background-color: rgb(169, 218, 169);
+}

@@ -1,9 +1,14 @@
 :root{
-    --color-primary: #1a2980;
-    --color-secondary: #26d0ce;
+    --color-primary: #fba92c;
+    --color-secondary: #fff;
+    --color-tertiary: #000;
 }
 
 body{
     margin: 0;
     padding: 0;
+    background: var(--color-secondary);
+    background: #FFFFFF;
+    background: linear-gradient(to top, #FFFFFF 0%, #FBA92C 100%);
+    height: 100vh;
 }
