@@ -3,7 +3,6 @@ package com.wf.loan.service;
 import com.wf.loan.dao.LoginDAO;
 import com.wf.loan.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

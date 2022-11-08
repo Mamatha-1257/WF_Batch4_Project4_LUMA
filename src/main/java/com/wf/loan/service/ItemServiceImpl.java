@@ -26,12 +26,12 @@ public class ItemServiceImpl implements ItemService {
         List<Map<String,String>> result=new ArrayList<>();
         for(EmployeeIssueDetails issue: issues){
             Map<String,String> itemMap=new HashMap<String,String>();
-            itemMap.put("issue id",issue.getIssue_id()+"");
+            itemMap.put("issue_id",issue.getIssue_id()+"");
             Item item=ldao.findItemByItemId(issue.getItem_id()+"");
-            itemMap.put("item description",item.getItem_description());
-            itemMap.put("item make",item.getItem_make()+"");
-            itemMap.put("item category",item.getItem_category()+"");
-            itemMap.put("item valuation",item.getItem_valuation()+"");
+            itemMap.put("item_description",item.getItem_description());
+            itemMap.put("item_make",item.getItem_make()+"");
+            itemMap.put("item_category",item.getItem_category()+"");
+            itemMap.put("item_valuation",item.getItem_valuation()+"");
             result.add(itemMap);
         }
         return result;

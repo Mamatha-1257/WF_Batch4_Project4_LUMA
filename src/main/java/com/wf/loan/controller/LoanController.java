@@ -6,11 +6,7 @@ import com.wf.loan.service.LoanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
@@ -28,15 +24,13 @@ public class LoanController {
 	
 	@GetMapping("/loans")
     public List<Loan> getAllLoans() {
-        List<Loan> result= service.getAllLoans();
-        return result;
+        return service.getAllLoans();
     }
     
     @PostMapping("/loans")
     public List<Map<String, String>> viewLoan(@RequestBody Map<String, String> userData ) {
         String id=userData.get("employee_id");
-        List<Map<String, String>> result= service.viewLoan(id);
-        return result;
+        return service.viewLoan(id);
     }
     
 	@PostMapping("/applyloan")

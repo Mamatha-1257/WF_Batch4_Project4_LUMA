@@ -1,7 +1,7 @@
 package com.wf.utils;
 
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.LocalDateTime;    
 public class CurrentDate {    
   
   public static String getCurrentDate() {

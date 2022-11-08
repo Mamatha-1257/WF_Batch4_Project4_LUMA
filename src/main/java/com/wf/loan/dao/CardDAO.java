@@ -1,7 +1,6 @@
 package com.wf.loan.dao;
 
 import com.wf.loan.model.Card;
-import com.wf.loan.model.Loan;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
