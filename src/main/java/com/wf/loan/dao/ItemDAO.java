@@ -1,5 +1,6 @@
 package com.wf.loan.dao;
 
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -14,5 +15,9 @@ public interface ItemDAO extends JpaRepository<Item,Integer> {
  
 	@Query("SELECT t from Item t where t.item_status = 'Y'")
 	List<Item> getAvailableItems();
+
+
+	@Query(value="SELECT * FROM items_master  where item_id= :item_id",nativeQuery = true)
+	Item findItemByItemId(@Param("item_id") String item_id);
 }
 
