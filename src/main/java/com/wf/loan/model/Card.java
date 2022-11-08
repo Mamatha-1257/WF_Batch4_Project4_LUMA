@@ -8,20 +8,23 @@ import java.util.Date;
 
 @Entity
 @Table(name="employee_card_details")
-public class CardDetails {
+public class Card {
 
 
     @Id
+    @Column
     String loan_id;
+    
     @Column
     String card_issue_date;
+    
     @Column
     String employee_id;
 
-    public CardDetails() {
+    public Card() {
     }
 
-    public CardDetails(String loan_id, String card_issue_date, String employee_id) {
+    public Card(String loan_id, String card_issue_date, String employee_id) {
         this.loan_id = loan_id;
         this.card_issue_date = card_issue_date;
         this.employee_id = employee_id;
