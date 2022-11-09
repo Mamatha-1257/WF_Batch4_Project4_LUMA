@@ -17,7 +17,7 @@ export const LoanApplication = () => {
   const { setShowAlert } = useContext(AlertContext);
 
   const [items, setItems] = useState(null);
-  const [selectedItemCategory, setSelectedItemCategory] = useState("furniture");
+  const [selectedItemCategory, setSelectedItemCategory] = useState("");
   const [selectedItemDescription, setSelectedItemDescription] = useState("");
   const [selectedItemMake, setSelectedItemMake] = useState("");
   const [itemValuation, setItemValuation] = useState("");
@@ -86,6 +86,12 @@ export const LoanApplication = () => {
       getItemData();
     } // eslint-disable-next-line
   }, []);
+
+  useEffect(() => {
+    console.log("in efefct");
+    if (!selectedItemCategory)
+      items && setSelectedItemCategory(items[0].item_category);
+  }, [items]);
 
   return (
     <div className="loan-page">

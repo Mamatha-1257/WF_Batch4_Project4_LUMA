@@ -40,9 +40,9 @@ export const Items = () => {
     <div className="loanapply">
       <div className="center1">
         <div>
-          <h2 class="center1">Items Purchased</h2>
+          <h2 className="center1">Items Purchased</h2>
           <div>
-            <table class="showtable">
+            <table className="showtable">
               <thead>
                 <tr>
                   <th>Employee ID:</th>
@@ -55,8 +55,8 @@ export const Items = () => {
             </table>
           </div>
 
-          <div class="table-wrapper">
-            <table class="fl-table">
+          <div className="table-wrapper">
+            <table className="fl-table">
               <tr>
                 <th>Issue Id</th>
                 <th>Item Description</th>

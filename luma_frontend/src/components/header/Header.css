@@ -9,3 +9,11 @@
     align-items: center; 
     font-size: 2.5rem;
 }
+
+button.logout-button{
+    position: absolute;
+    margin: 10px;
+    right: 0%;
+    background-color: var(--color-tertiary);
+    box-sizing: border-box;
+}
