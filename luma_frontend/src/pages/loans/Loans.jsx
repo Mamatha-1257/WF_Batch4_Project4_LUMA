@@ -49,27 +49,26 @@ export const Loans = () => {
                   <th>{empId}</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr></tr>
-              </tbody>
             </table>
           </div>
 
           <div className="table-wrapper">
             <table className="fl-table">
-              <tr>
-                <th>Loan Id</th>
-                <th>Loan type</th>
-                <th>Duration</th>
-              </tr>
-
-              {data.map((col) => (
-                <tr key={col}>
-                  <td>{col["loan type"]}</td>
-                  <td>{col["card issue date"]}</td>
-                  <td>{col["Duration in years"]}</td>
+              <tbody>
+                <tr>
+                  <th>Loan Id</th>
+                  <th>Loan type</th>
+                  <th>Duration</th>
                 </tr>
-              ))}
+
+                {data.map((col) => (
+                  <tr key={col}>
+                    <td>{col["loan type"]}</td>
+                    <td>{col["card issue date"]}</td>
+                    <td>{col["Duration in years"]}</td>
+                  </tr>
+                ))}
+              </tbody>
             </table>
           </div>
         </div>
