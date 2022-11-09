@@ -35,7 +35,6 @@ export const LoanApplication = () => {
         item_make: selectedItemMake,
       })
       .then((response) => {
-        console.log(response);
         if (response.status === 200) {
           setShowAlert({
             showAlert: true,

@@ -1,0 +1,69 @@
+.loanapply{
+    height: 100vh;
+    margin-top: 12rem;
+}
+
+.center1{
+    text-align: center;
+}
+.error{
+    color: red;
+    font-size: 1rem;
+}
+
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }
+
+.showtable {    
+    margin-left: auto;  
+    margin-right: auto;  
+    border-collapse: collapse;    
+    width: 400px;  
+    text-align: center;  
+    font-size: 15px;  
+    }  
+    .table-wrapper{
+        margin: 10px 70px 70px;
+        box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    }
+    
+    .fl-table {
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1.5rem;
+        font-weight: normal;
+        border: none;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 100%;
+        white-space: nowrap;
+        background-color: white;
+    }
+    th{
+        font-size: 1.75rem;
+    }
+    .fl-table td, .fl-table th {
+        text-align: center;
+        padding: 8px;
+    }
+    
+    .fl-table td {
+        border-right: 1px solid #f8f8f8;
+        font-size: 1.25rem;
+    }
+    
+    .fl-table thead th {
+        color: #ffffff;
+        background: #4FC3A1;
+    }
+    
+    
+    .fl-table thead th:nth-child(odd) {
+        color: #ffffff;
+        background: #324960;
+    }
+    
+    .fl-table tr:nth-child(even) {
+        background: #F8F8F8;
+    }
