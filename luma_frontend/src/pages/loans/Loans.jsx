@@ -56,8 +56,8 @@ export const Loans = () => {
             <table className="fl-table">
               <tbody>
                 <tr>
-                  <th>Loan Id</th>
                   <th>Loan type</th>
+                  <th>Card Issue Date</th>
                   <th>Duration</th>
                 </tr>
 
